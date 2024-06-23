@@ -1,0 +1,47 @@
+<main >
+    <h1 class="text-start h6 container">Real-time Products</h1>
+    <hr class="container">
+    <div class="realTimeProducts container">
+        <div>
+            <ul id="products-list" class="row"></ul>
+        </div>
+    <div class="operateProducts">
+    <h3>Add Products</h3>
+    <form id="add-product-form">
+        <label>Brands</label>
+        <input type="text" id="product-brands" class="form-control" required>
+        <label>Name</label>
+        <input type="text" id="product-name" class="form-control" required>
+        <label>Description</label>
+        <input type="text" id="product-description" class="form-control" required>
+        <label>Code</label>
+        <input type="text" id="product-code" class="form-control" required>
+        <label>Price</label>
+        <input type="number" id="product-price" class="form-control" required>
+       
+       
+        <label>Stock</label>
+        <input type="number" id="product-stock" class="form-control" required>
+        <label>Category</label>
+        <input type="text" id="product-category" class="form-control" required>
+        <label>Thumbnails</label>
+        <input type="text" id="product-thumbnails" class="form-control">
+     <div>
+             <label>Status</label>
+        <input type="checkbox" id="product-status">
+        </div>
+        <button type="submit" class="btn btn-secondary btn-sm bg-black col btnAdd">ADD</button>
+    </form>
+    <h3>Delete Products</h3>
+    <form id="delete-product-form">
+        <label>Product ID</label>
+        <input type="text" id="delete-product-id" class="form-control" required>
+        <button type="submit" class="btn btn-secondary btn-sm bg-black col btnAdd">DELETE</button>
+    </form>
+</div>
+
+    </div>
+</main>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/realTimeProducts.js"></script>

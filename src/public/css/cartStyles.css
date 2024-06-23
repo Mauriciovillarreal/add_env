@@ -1,0 +1,84 @@
+.cartContainer {
+    padding-top: 8px;
+    height: 100%;
+}
+
+.cartContainer h5 {
+    padding-bottom: 15px;
+ 
+}
+
+
+
+.cartProducts {
+    height: calc(80vh - 70px);
+    overflow-y: auto;
+    margin-bottom: 15px;
+    padding: 20px;
+
+}
+
+.detailCart {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    border: 1px solid rgb(199, 199, 199);
+    margin-bottom: 15px;
+}
+
+.detailCart ul li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.product {
+    margin-top: 15px;
+    font-size: 13px;
+    padding-left: 0 !important;
+   
+}
+
+ol, ul {
+    padding-left: 0 !important;
+}
+
+.product .name {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight:bold;
+}
+
+.imageContainer {
+    display: flex;
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    width: 100%; /* Adjust the width as needed */
+    height: 100%; /* Adjust the height as needed */
+}
+
+.imageContainer img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cartFooter {
+    padding-top: 10px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.cartButton {
+    margin: 0 15px;
+}
+
+.cartButton button {
+    margin: 5px 0px 5px;
+    padding: 2px;
+    border: none;
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: block;
+}
